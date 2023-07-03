@@ -1,15 +1,15 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import Navigation from "./Navigation";
+
 function NavBar(){
     return(
-        <nav className="navbar">
-            <img
+      <div className="navbar">
+         <img
           src={require("../assets/nav-logo.png")}
           alt="Little Lemon logo"
           className="nav-image"
         ></img>
-             <ul>
+    <ul>
         <li>
           <Link to="/" className="a">
             Home
@@ -40,8 +40,8 @@ function NavBar(){
             Login
           </Link>
         </li>
-      </ul>
-        </nav>
+    </ul>
+      <div/>
     )
 }
 export default  NavBar;
